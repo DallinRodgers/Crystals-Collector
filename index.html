@@ -8,6 +8,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -23,45 +25,41 @@
   <body>
     <div class="container">
       <div class="row">
-        <h1 class="text-center">One Punch Man - RPG</h1>
+        <h1 class="text-center bg-warning p-3 text-white">Crystals Collector</h1>
       </div>
-      <div class="row" id="characterList">
-        <div class="col-md-3 character" id="Saitama">
-          <h5 class="text-center">Saitama</h5>
-          <img src="assets/img/saitama.jpg" alt="Image of Saitama" />
-          <p class="health text-center">140</p>
-        </div>
-        <div class="col-md-3 character" id="Genos">
-          <h5 class="text-center">Genos</h5>
-          <img src="assets/img/genos.jpg" alt="Image of Genos" />
-          <p class="health text-center">160</p>
-        </div>
-        <div class="col-md-3 character" id="Speed-o-Sound-Sonic">
-          <h5 class="text-center">Speed-o-Sound Sonic</h5>
-          <img
-            src="assets/img/speed-o-sound-sonic.jpg"
-            alt="Image of Speed-o-Sound-Sonic"
-          />
-          <p class="health text-center">140</p>
-        </div>
-        <div class="col-md-3 character" id="Garou">
-          <h5 class="text-center">Garou</h5>
-          <img src="assets/img/garou.jpeg" alt="Image of Garou" />
-          <p class="health text-center">180</p>
-        </div>
+      <div class="content px-3">
+          <div class="row bg-light p-2">
+              <div class="instructions">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal</p>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="randomNumber col-md-4 bg-primary">
+                <span class="text-white display-3">39</span>
+              </div>
+              <div class="gameScore col-md-6">
+                <p>Wins: <span>0</span></p>
+                <p>Loses: <span>0</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="jewel jewel-1"></div>
+              <div class="jewel jewel-2"></div>
+              <div class="jewel jewel-3"></div>
+              <div class="jewel jewel-4"></div>
+            </div>
+            <div class="row">
+              <p>Your total score is:</p>
+            </div>
+            <div class="row">
+              <div class="yourScore"></div>
+            </div>
       </div>
-      <div class="row">
-        <div class="col-md-6" id="yourCharacter">
-          <h2 class="text-center">Your Character</h2>
-        </div>
-        <div class="col-md-6" id="defender">
-          <h2 class="text-center">Defender</h2>
-        </div>
-      </div>
-      <div class="row" id="availableEnemies">
-        <h2 class="text-center">Enemies Available To Attach</h2>
-      </div>
-    </div>
+      
 
     <script src="assets/js/main.js"></script>
     <!-- Optional JavaScript -->
@@ -81,5 +79,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
