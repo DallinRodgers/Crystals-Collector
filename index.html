@@ -10,13 +10,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -24,11 +17,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <h1 class="text-center bg-warning p-3 text-white">Crystals Collector</h1>
+      <div>
+        <h1 class="text-center">Crystals Collector</h1>
       </div>
       <div class="content px-3">
-          <div class="row bg-light p-2">
+          <div class="row p-2">
               <div class="instructions">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
@@ -37,48 +30,32 @@
                 <p>Each time when the game starts, the game will change the values of each crystal</p>
               </div>
             </div>
-            <div class="row my-3">
-              <div class="randomNumber col-md-4 bg-primary">
-                <span class="text-white display-3" id="numberToGuess">39</span>
+            <div class="game-section">
+              <div class="row flex">
+                <div class="randomNumber">
+                  <span id="numberToGuess" class="display-big">39</span>
+                </div>
+                <div class="gameScore">
+                  <p>Wins: <span id="wins">0</span></p>
+                  <p>Loses: <span id="loses">0</span></p>
+                </div>
               </div>
-              <div class="gameScore col-md-6">
-                <p>Wins: <span>0</span></p>
-                <p>Loses: <span>0</span></p>
+              <div class=" flex">
+                <div class="jewel jewel-1 m-2"><img src="assets/img/jewel-1.jpg" alt="Jewel One"></div>
+                <div class="jewel jewel-2 m-2"><img src="assets/img/jewel-2.jpg" alt="Jewel Two"></div>
+                <div class="jewel jewel-3 m-2"><img src="assets/img/jewel-3.jpg" alt="Jewel Three"></div>
+                <div class="jewel jewel-4 m-2"><img src="assets/img/jewel-4.jpg" alt="Jewel Four"></div>
               </div>
-            </div>
-            <div class="row">
-              <div class="jewel jewel-1">jewel-1</div>
-              <div class="jewel jewel-2">jewel-2</div>
-              <div class="jewel jewel-3">jewel-3</div>
-              <div class="jewel jewel-4">jewel-4</div>
-            </div>
-            <div class="row">
-              <p>Your total score is:</p>
-            </div>
-            <div class="row">
-              <div class="yourScore"></div>
+              <div class="center">
+                <div>
+                  <p>Your total score is:</p>
+                </div>
+                <div>
+                  <div><span id="yourScore"class="display-big">12</span></div>
+                </div>
+              </div>
             </div>
       </div>
-      
-
-    <script src="assets/js/main.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
