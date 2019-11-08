@@ -1,2 +1,2 @@
 # unit-4-game
- This a RPG game made using jQuery
+ This is a game where you are given a random number and four jewels with a hidden value given to each of them. The goal of the game is to use the jewles to add up to the random number given.
