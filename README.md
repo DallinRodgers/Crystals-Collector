@@ -1,4 +1,7 @@
-# unit-4-game
- This is a game where you are given a random number and four jewels with a hidden value given to each of them. The goal of the game is to use the jewles to add up to the random number given.
+View online: https://dallinrodgers.github.io/Hike-This/
 
-Link: https://dallinrodgers.github.io/unit-4-game/
+Description:
+
+This is a Crystal collection game. When the page loads the user will see four crystals and a score to reach. Each crystal has a random value assigned to it which is unknown to the player. Using these crystals the play needs to reach or get close to the score. 
+
+It is possible to get a bad set of crystals. Meaning you cannot win.
