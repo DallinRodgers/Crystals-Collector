@@ -1,4 +1,6 @@
-View online: https://dallinrodgers.github.io/Hike-This/
+Technology Used: HTML, CSS, jQuery
+
+View online: https://dallinrodgers.github.io/Crystals-Collector/
 
 Description:
 
